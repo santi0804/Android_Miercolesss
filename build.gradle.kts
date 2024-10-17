@@ -14,4 +14,6 @@ allprojects {
     // No agregar repositorios aquí, ya están configurados en settings.gradle.kts
 }
 
-task<Delete>("clean")
+task<Delete>("clean") {
+    delete(rootProject.buildDir)
+}
